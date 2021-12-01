@@ -1,0 +1,19 @@
+:root {
+    font-family: "Cascadia Code";
+    font-size: 20px;
+
+    color: #0F0F0F;
+    background: #F0F0F0;
+
+    margin: 25px 50px 25px 50px;
+}
+
+code {
+    font-weight: bold;
+
+    color: #512bd4;
+}
+
+a, u {
+    text-decoration: none;
+}
