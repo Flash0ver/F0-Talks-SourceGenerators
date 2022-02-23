@@ -8,7 +8,7 @@ using System.Text.Json.Serialization;
 ConsoleLoggerProvider provider = new(ConsoleOptionsMonitor.Instance);
 ILogger logger = provider.CreateLogger("Console");
 
-logger.Hello("NDC Oslo");
+logger.Hello("Hello, World!");
 
 logger.LogWarning(Helper.Text);
 logger.LogWarning(PostInitialization.Roslyn3_9.Get());

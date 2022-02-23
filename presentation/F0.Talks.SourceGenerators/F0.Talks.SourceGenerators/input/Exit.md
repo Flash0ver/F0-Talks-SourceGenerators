@@ -1,4 +1,3 @@
-# Tusen takk
 # Thank you
 
 > Enough talk!
