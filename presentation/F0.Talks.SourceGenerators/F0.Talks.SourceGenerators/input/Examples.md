@@ -7,4 +7,4 @@
 - [F0.Compatibility](https://github.com/Flash0ver/F0.Compatibility)
 
 ---
-#### [TOC](./Content.html)
+#### [TOC](./Content.md)

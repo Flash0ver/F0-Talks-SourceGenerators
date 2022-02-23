@@ -1,0 +1,31 @@
+* text=auto
+
+*.config text
+*.cs text diff=csharp
+*.cshtml text
+*.csproj text
+*.css text diff=css
+*.editorconfig text
+*.globalconfig text
+*.htm text diff=html
+*.html text diff=html
+*.json text
+*.md text diff=markdown
+*.props text
+*.ps1 text
+*.razor text
+*.resx text
+*.runsettings text
+*.sln text
+*.slnf text
+*.targets text
+*.txt text
+*.vb text
+*.vbproj text
+*.vsixmanifest text
+*.xaml text
+*.xml text
+*.yaml text
+*.yml text
+
+*.png binary

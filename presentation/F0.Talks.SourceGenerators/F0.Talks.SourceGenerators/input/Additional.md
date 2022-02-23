@@ -8,4 +8,4 @@
 - [Working with types in a Roslyn analyzer (Gérald Barré)](https://www.meziantou.net/working-with-types-in-a-roslyn-analyzer.htm)
 
 ---
-#### [TOC](./Content.html)
+#### [TOC](./Content.md)

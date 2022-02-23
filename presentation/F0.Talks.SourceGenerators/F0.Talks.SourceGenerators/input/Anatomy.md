@@ -24,4 +24,4 @@ internal sealed class MySyntaxReceiver : ISyntaxReceiver
 ```
 
 ---
-#### [TOC](./Content.html)
+#### [TOC](./Content.md)

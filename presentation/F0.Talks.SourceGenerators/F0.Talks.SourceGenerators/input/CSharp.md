@@ -22,4 +22,4 @@
 - [partial method](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/partial-method)
 - [ModuleInitializerAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.moduleinitializerattribute)
 
-#### [TOC](./Content.html)
+#### [TOC](./Content.md)

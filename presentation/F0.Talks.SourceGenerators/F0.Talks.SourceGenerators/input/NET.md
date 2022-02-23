@@ -11,4 +11,4 @@
   - [Razor](https://andrewlock.net/using-source-generators-with-blazor-in-dotnet-6/)
 
 ---
-#### [TOC](./Content.html)
+#### [TOC](./Content.md)

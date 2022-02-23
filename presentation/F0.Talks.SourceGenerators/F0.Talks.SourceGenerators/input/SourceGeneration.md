@@ -22,4 +22,4 @@
 - [Design Document](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.md)
 - [Cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md)
 
-#### [TOC](./Content.html)
+#### [TOC](./Content.md)
