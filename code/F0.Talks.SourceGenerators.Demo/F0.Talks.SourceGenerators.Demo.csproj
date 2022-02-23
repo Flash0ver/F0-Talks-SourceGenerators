@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\F0.Talks.SourceGenerators.Roslyn3_8\F0.Talks.SourceGenerators.Roslyn3_8.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
-    <ProjectReference Include="..\F0.Talks.SourceGenerators.Roslyn3_9\F0.Talks.SourceGenerators.Roslyn3_9.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
+    <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn3_8\F0.Talks.SourceGenerators.Demo.Roslyn3_8.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
+    <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn3_9\F0.Talks.SourceGenerators.Demo.Roslyn3_9.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
   </ItemGroup>
 
 </Project>
