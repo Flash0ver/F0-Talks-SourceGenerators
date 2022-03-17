@@ -3,6 +3,13 @@ My talk on Roslyn-based Source Generators.
 
 ## Roslyn Source Generators - Never send a human to do a machine's job
 
+### 2022-02-23: PostSharp Webinar
+- Live Webinar
+- [PostSharp](https://www.postsharp.net/)
+- [Webinar page](https://postsharp.ac-page.com/stefan-polz-webinar)
+- [Recording](https://www.youtube.com/watch?v=J_Y1obNh_RA)
+- [Transcript](https://blog.postsharp.net/post/webinar-source-generators.html)
+
 ### 2021-12-01: NDC Oslo 2021
 - Venue: _Oslo Spektrum_
 - [NDC Conferences](https://ndcconferences.com)

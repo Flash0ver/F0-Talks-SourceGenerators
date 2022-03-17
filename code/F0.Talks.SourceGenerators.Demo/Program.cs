@@ -1,14 +1,11 @@
-﻿using F0.Talks.SourceGenerators;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Console;
+﻿using Microsoft.Extensions.Logging;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-ConsoleLoggerProvider provider = new(ConsoleOptionsMonitor.Instance);
-ILogger logger = provider.CreateLogger("Console");
+ILogger logger = CreateLogger(LogLevel.Trace);
 
-logger.Hello("Hello, World!");
+logger.Hello("World");
 
 logger.LogWarning(Helper.Text);
 logger.LogWarning(PostInitialization.Roslyn3_9.Get());
@@ -16,7 +13,7 @@ logger.LogWarning(PostInitialization.Roslyn3_9.Get());
 Entity entity = new()
 {
     Name = "Generation",
-    Number = 1,
+    Number = 0x_F0,
 };
 string json = JsonSerializer.Serialize(entity, SerializerContext.Default.Entity);
 logger.LogInformation(json);
@@ -57,4 +54,3 @@ public static partial class Helper
 
     internal static partial string Get();
 }
-

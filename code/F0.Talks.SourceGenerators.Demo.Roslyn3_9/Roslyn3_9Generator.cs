@@ -52,7 +52,7 @@ internal static class Roslyn3_9
 
 internal sealed class SyntaxContextReceiver : ISyntaxContextReceiver
 {
-    public int NodesVisited { get; set; }
+    public int NodesVisited { get; private set; }
 
     public void OnVisitSyntaxNode(GeneratorSyntaxContext context)
     {

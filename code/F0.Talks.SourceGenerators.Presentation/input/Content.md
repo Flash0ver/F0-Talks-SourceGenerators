@@ -1,8 +1,8 @@
 # Table of contents
 
+1. [.NET 6.0 Generators](./NET.md)
 1. [C# 9.0](./CSharp.md)
 1. [Laws of Source Generation](./SourceGeneration.md)
-1. [.NET 6.0 Generators](./NET.md)
 1. [Anatomy](./Anatomy.md)
 1. [Tooling](./Tooling.md)
 1. [Debugging](./Debugging.md)
