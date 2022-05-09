@@ -14,4 +14,8 @@
   - Rider 2021.3
 
 ---
+- [Microsoft.CodeAnalysis.Common 3.8](https://www.fuget.org/packages/Microsoft.CodeAnalysis.Common/3.8.0)
+- [Microsoft.CodeAnalysis.Common 3.9 API Diff](https://www.fuget.org/packages/Microsoft.CodeAnalysis.Common/3.9.0/lib/netstandard2.0/diff/3.8.0/)
+- [Microsoft.CodeAnalysis.Common 4.0 API Diff](https://www.fuget.org/packages/Microsoft.CodeAnalysis.Common/4.0.1/lib/netstandard2.0/diff/3.11.0/)
+
 #### [TOC](./Content.md)

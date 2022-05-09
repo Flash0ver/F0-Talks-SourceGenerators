@@ -8,7 +8,7 @@
   - as strings
 - additive only
 - can produce diagnostics
-- may access access additional files (non-C# source texts)
+- may access additional files (non-C# source texts)
 - un-ordered
   - no access to files created by other source generators
 - are technically analyzers

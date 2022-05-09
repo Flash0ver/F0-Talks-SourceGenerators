@@ -1,5 +1,6 @@
 # Table of contents
 
+1. [Roslyn](./Roslyn.md)
 1. [.NET 6.0 Generators](./NET.md)
 1. [C# 9.0](./CSharp.md)
 1. [Laws of Source Generation](./SourceGeneration.md)
@@ -10,6 +11,8 @@
 1. [Versioning](./Versioning.md)
 1. [Performance](./Performance.md)
 1. [NuGet](./NuGet.md)
+1. [Best Practices](./BestPractices.md)
+1. [Get started](./Kickstart.md)
 1. [Examples](./Examples.md)
 1. [Would You Like to Know More?](./Additional.md)
 

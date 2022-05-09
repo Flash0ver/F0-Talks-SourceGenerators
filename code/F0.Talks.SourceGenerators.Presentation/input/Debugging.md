@@ -23,7 +23,8 @@
   <ItemGroup>
     <ProjectReference
       Include="..\..\gen\MyGenerator\MyGenerator.csproj"
-      PrivateAssets="all" ReferenceOutputAssembly="false"
+      PrivateAssets="all"
+      ReferenceOutputAssembly="false"
       OutputItemType="Analyzer"
       SetTargetFramework="TargetFramework=netstandard2.0" />
   </ItemGroup>

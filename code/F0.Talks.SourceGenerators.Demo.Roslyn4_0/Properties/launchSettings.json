@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "F0.Talks.SourceGenerators.Demo.Roslyn3_9": {
+    "F0.Talks.SourceGenerators.Demo.Roslyn4_0": {
       "commandName": "DebugRoslynComponent",
       "targetProject": "..\\F0.Talks.SourceGenerators.Demo\\F0.Talks.SourceGenerators.Demo.csproj"
     }

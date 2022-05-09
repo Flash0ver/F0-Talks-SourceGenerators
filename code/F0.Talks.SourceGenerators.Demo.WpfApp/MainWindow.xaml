@@ -1,0 +1,24 @@
+﻿<Window
+    x:Class="F0.Talks.SourceGenerators.Demo.WpfApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:F0.Talks.SourceGenerators.Demo.WpfApp"
+    mc:Ignorable="d"
+    Title="MainWindow" Width="800" Height="600">
+    <Window.DataContext>
+        <local:MainViewModel />
+    </Window.DataContext>
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding Path=Number}" FontSize="64" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="++" Command="{Binding Path=IncrementCommand}" FontSize="64" Width="128" />
+                <Button Content="--" Command="{Binding Path=DecrementCommand}" FontSize="64" Width="128" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

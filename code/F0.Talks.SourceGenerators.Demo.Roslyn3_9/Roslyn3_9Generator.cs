@@ -4,28 +4,13 @@ using System.Text;
 
 namespace F0.Talks.SourceGenerators.Roslyn3_9;
 
-[Generator]
+[Generator(LanguageNames.CSharp)]
 internal sealed class Roslyn3_9Generator : ISourceGenerator
 {
     public void Initialize(GeneratorInitializationContext context)
     {
         context.RegisterForPostInitialization(PostInitialization);
         context.RegisterForSyntaxNotifications(static () => new SyntaxContextReceiver());
-
-        static void PostInitialization(GeneratorPostInitializationContext context)
-        {
-            const string source = @"namespace PostInitialization;
-
-internal static class Roslyn3_9
-{
-    internal static string Get()
-    {
-        return ""PostInitialization"";
-    }
-}
-";
-            context.AddSource("PostInitialization.g.cs", source);
-        }
     }
 
     public void Execute(GeneratorExecutionContext context)
@@ -38,15 +23,27 @@ internal static class Roslyn3_9
         bool hasPostInitialization = type is not null;
 
         StringBuilder source = new();
-        source.Append("// PostInitialization found: ");
-        source.AppendLine(hasPostInitialization.ToString());
-        source.Append("// ");
-        source.Append(nameof(receiver.NodesVisited));
-        source.Append(": ");
-        source.Append(receiver.NodesVisited);
+        source.AppendLine($"// PostInitialization found: {hasPostInitialization}");
+        source.AppendLine($"// {nameof(receiver.NodesVisited)}: {receiver.NodesVisited}");
+        source.AppendLine($"// Generated on {DateTime.UtcNow:yyyy-MM-dd HH:mm:ss}");
         source.AppendLine();
 
         context.AddSource("Generated.g.cs", source.ToString());
+    }
+
+    private static void PostInitialization(GeneratorPostInitializationContext context)
+    {
+        const string source = @"namespace PostInitialization;
+
+internal static class Roslyn3_9
+{
+    internal static string Get()
+    {
+        return ""PostInitialization"";
+    }
+}
+";
+        context.AddSource("PostInitialization.g.cs", source);
     }
 }
 

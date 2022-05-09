@@ -6,12 +6,12 @@ using System.Text.RegularExpressions;
 return await Bootstrapper
     .Factory
     .CreateDefault(args)
-    .BuildPipeline("Render Presentation", builder => builder
+    .BuildPipeline("Render Presentation", static builder => builder
         .WithInputReadFiles("*.md")
         .WithProcessModules(new LinkModule(), new RenderMarkdown())
         .WithPostProcessModules(new SlideModule())
         .WithOutputWriteFiles(".html"))
-    .BuildPipeline("Copy CSS", builder => builder
+    .BuildPipeline("Copy CSS", static builder => builder
         .WithInputReadFiles("*.css")
         .WithOutputWriteFiles(".css"))
     .RunAsync();
