@@ -17,7 +17,7 @@ public class LoggingBenchmarks
         logger = NullLogger.Instance;
     }
 
-    [Benchmark]
+    [Benchmark(Baseline = true)]
     public object? LoggerExtensions()
     {
         logger.LogInformation("Hello, {name} {number}!", name, number);

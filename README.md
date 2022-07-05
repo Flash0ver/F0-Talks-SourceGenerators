@@ -3,6 +3,12 @@ My talk on Roslyn-based Source Generators.
 
 ## Roslyn Source Generators - Never send a human to do a machine's job
 
+### 2022-05-09: NDC London 2022
+- Venue: _Queen Elizabeth II Centre_
+- [NDC Conferences](https://ndcconferences.com)
+- [NDC London](https://ndclondon.com)
+- Video: TBP
+
 ### 2022-02-23: PostSharp Webinar
 - Live Webinar
 - [PostSharp](https://www.postsharp.net/)
