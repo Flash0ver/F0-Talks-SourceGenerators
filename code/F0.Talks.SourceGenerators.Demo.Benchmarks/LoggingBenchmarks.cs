@@ -7,7 +7,7 @@ namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 [MemoryDiagnoser]
 public class LoggingBenchmarks
 {
-    private readonly string name = "NDC London";
+    private readonly string name = "Developer Week";
     private readonly int number = 2022;
 
     private readonly ILogger logger;
@@ -20,7 +20,10 @@ public class LoggingBenchmarks
     [Benchmark(Baseline = true)]
     public object? LoggerExtensions()
     {
-        logger.LogInformation("Hello, {name} {number}!", name, number);
+        if (logger.IsEnabled(LogLevel.Information))
+        {
+            logger.LogInformation("Hello, {name} {number}!", name, number);
+        }
 
         return null;
     }

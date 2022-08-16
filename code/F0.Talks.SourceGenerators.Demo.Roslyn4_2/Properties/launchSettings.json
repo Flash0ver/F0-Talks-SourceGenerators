@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "F0.Talks.SourceGenerators.Demo.Roslyn4_2": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\F0.Talks.SourceGenerators.Demo\\F0.Talks.SourceGenerators.Demo.csproj"
+    }
+  }
+}

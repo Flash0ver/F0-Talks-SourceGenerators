@@ -3,6 +3,11 @@ My talk on Roslyn-based Source Generators.
 
 ## Roslyn Source Generators - Never send a human to do a machine's job
 
+### 2022-07-07: DWX 2022 - Developer Week 2022
+- Location: _Nürnberg Convention Center NCC Ost_
+- [DWX - Developer Week](https://www.developer-week.de/)
+- [Speaker](https://www.developer-week.de/history/speaker-2022#/speaker/17094-stefan-polz)
+
 ### 2022-05-09: NDC London 2022
 - Venue: _Queen Elizabeth II Centre_
 - [NDC Conferences](https://ndcconferences.com)

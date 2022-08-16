@@ -5,6 +5,7 @@
 - [C# Source Generators in Action (Andrey Dyatlov)](https://www.youtube.com/watch?v=052xutD86uI)
 - [Exploring Source Generators (Martin Ullrich)](https://www.youtube.com/watch?v=qFI9k-9N_js)
 - [Source and Incremental Generators: Under the hood (Chris Sienkiewicz)](https://youtu.be/tJldyGnWDEQ?t=6858)
+- [Roslyn Source Generators in .NET 6](https://www.thinktecture.com/webinare/roslyn-source-generators-in-dot-net-6/)
 - [The [Source Code] Generation Game (Steve Collins)](https://gist.github.com/stevetalkscode/2882e9e9443f142faa5081444e7f2d7b)
 - [Working with types in a Roslyn analyzer (Gérald Barré)](https://www.meziantou.net/working-with-types-in-a-roslyn-analyzer.htm)
 
