@@ -5,7 +5,7 @@ using System.CodeDom.Compiler;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace F0.Talks.SourceGenerators.Roslyn3_8;
+namespace F0.Talks.SourceGenerators.Demo.Roslyn3_8;
 
 [Generator]
 internal sealed class Roslyn3_8Generator : ISourceGenerator

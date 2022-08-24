@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Text;
 
-namespace F0.Talks.SourceGenerators.Roslyn3_9;
+namespace F0.Talks.SourceGenerators.Demo.Roslyn3_9;
 
 [Generator(LanguageNames.CSharp)]
 internal sealed class Roslyn3_9Generator : ISourceGenerator
