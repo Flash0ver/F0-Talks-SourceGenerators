@@ -10,13 +10,13 @@ internal sealed partial class MainViewModel
     private int number = 0;
 
 
-    [ICommand]
+    [RelayCommand]
     void Increment()
     {
         Number++;
     }
 
-    [ICommand]
+    [RelayCommand]
     void Decrement()
     {
         Number--;
