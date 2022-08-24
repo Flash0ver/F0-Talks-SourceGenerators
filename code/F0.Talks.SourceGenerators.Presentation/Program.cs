@@ -1,6 +1,4 @@
-﻿using Statiq.App;
-using Statiq.Common;
-using Statiq.Markdown;
+﻿using Statiq.Markdown;
 using System.Text.RegularExpressions;
 
 return await Bootstrapper
@@ -34,8 +32,7 @@ internal sealed class LinkModule : ParallelModule
         {
             using (StreamReader reader = new(content))
             {
-                string? line;
-                while ((line = await reader.ReadLineAsync()) is not null)
+                while (await reader.ReadLineAsync() is { } line)
                 {
                     line = regex.Replace(line, "$1html$3", 1);
 
