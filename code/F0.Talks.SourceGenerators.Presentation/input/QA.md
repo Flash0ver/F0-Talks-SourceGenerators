@@ -11,6 +11,7 @@ https://github.com/Flash0ver/F0-Talks-SourceGenerators
 ### Contact
 * Twitter: [@0x_F0](https://twitter.com/0x_F0)
 * Twitch: [FlashOWare](https://www.twitch.tv/flashoware)
+* YouTube: [FlashOWare](https://www.youtube.com/channel/UCf2wfQDjuGgmlZNodeQbDVg)
 * GitHub: [Flash0ver](https://github.com/Flash0ver)
 * NuGet: [Flash0ver](https://www.nuget.org/profiles/Flash0ver)
 * Stack Overflow: [FlashOver](https://stackoverflow.com/users/10167996/flashover)

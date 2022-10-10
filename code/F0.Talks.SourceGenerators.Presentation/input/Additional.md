@@ -1,5 +1,6 @@
 # References & Additional Resources
 
+- [Learn Roslyn Now](https://joshvarty.com/learn-roslyn-now/)
 - [C# Source Generators - Write Code that Writes Code (David Wengier)](https://www.youtube.com/watch?v=3YwwdoRg2F4)
 - [Using Source Generators for Fun and maybe profit (Jason Bock)](https://www.youtube.com/watch?v=P9Pv5IdinMU)
 - [C# Source Generators in Action (Andrey Dyatlov)](https://www.youtube.com/watch?v=052xutD86uI)

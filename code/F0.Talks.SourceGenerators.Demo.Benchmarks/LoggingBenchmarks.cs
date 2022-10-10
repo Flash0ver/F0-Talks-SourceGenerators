@@ -1,39 +1,52 @@
 ﻿using BenchmarkDotNet.Attributes;
+using F0.Generated;
+using F0.Primitives;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Abstractions;
 
 namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 
+/// <summary>
+/// <see href="https://learn.microsoft.com/dotnet/core/extensions/logger-message-generator">Compile-time logging source generation</see>
+/// <seealso href="https://learn.microsoft.com/dotnet/core/extensions/high-performance-logging">High-performance logging in .NET</seealso>
+/// <seealso href="https://learn.microsoft.com/aspnet/core/fundamentals/logging/loggermessage">High-performance logging with LoggerMessage in ASP.NET Core</seealso>
+/// </summary>
 [MemoryDiagnoser]
 public class LoggingBenchmarks
 {
-    private readonly string name = "Developer Week";
+    private readonly string name = "Dotnetos Conference";
     private readonly int number = 2022;
 
-    private readonly ILogger logger;
+    [ParamsSource(nameof(Loggers))]
+    public ILogger Logger { get; set; } = null!;
 
-    public LoggingBenchmarks()
+    public static IEnumerable<ILogger> Loggers()
     {
-        logger = NullLogger.Instance;
+        return new[]
+        {
+            new MyLogger(LogLevel.Information),
+            new MyLogger(LogLevel.Warning),
+        };
     }
 
     [Benchmark(Baseline = true)]
-    public object? LoggerExtensions()
+    public void LoggerExtensions()
     {
-        if (logger.IsEnabled(LogLevel.Information))
-        {
-            logger.LogInformation("Hello, {name} {number}!", name, number);
-        }
-
-        return null;
+        Logger.LogInformation(240, "Hello, {name} {number}!", name, number);
     }
 
     [Benchmark]
-    public object? LoggerMessageGenerator()
+    public void LoggerExtensionsIsEnabled()
     {
-        logger.Hello(name, number);
+        if (Logger.IsEnabled(LogLevel.Information))
+        {
+            Logger.LogInformation(240, "Hello, {name} {number}!", name, number);
+        }
+    }
 
-        return null;
+    [Benchmark]
+    public void LoggerMessageGenerator()
+    {
+        Logger.Hello(name, number);
     }
 }
 
@@ -41,4 +54,35 @@ public static partial class Log
 {
     [LoggerMessage(240, LogLevel.Information, "Hello, {name} {number}!")]
     public static partial void Hello(this ILogger logger, string name, int number);
+}
+
+internal sealed class MyLogger : ILogger
+{
+    private readonly LogLevel minLevel;
+
+    public MyLogger(LogLevel minLevel)
+    {
+        this.minLevel = minLevel;
+    }
+
+    public IDisposable BeginScope<TState>(TState state)
+    {
+        return NullDisposable.Instance;
+    }
+
+    public bool IsEnabled(LogLevel logLevel)
+    {
+        return logLevel != LogLevel.None
+            && logLevel >= minLevel;
+    }
+
+    public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception? exception, Func<TState, Exception?, string> formatter)
+    {
+        // no-op
+    }
+
+    public override string? ToString()
+    {
+        return $"Min: {EnumInfo.GetName(minLevel)}";
+    }
 }

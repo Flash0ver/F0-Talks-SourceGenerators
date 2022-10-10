@@ -9,11 +9,12 @@
 * .NET since 2013
 * Roslyn since 2020
 * Source Generators since 2021
-* Senior Developer @ [Admiral Sportwetten GmbH](https://www.admiral.ag/)
+* Senior Software Developer @ [Trayport](https://www.trayport.com)
 
 #### Alter egos
 * Twitter: [@0x_F0](https://twitter.com/0x_F0)
 * Twitch: [FlashOWare](https://www.twitch.tv/flashoware)
+* YouTube: [FlashOWare](https://www.youtube.com/channel/UCf2wfQDjuGgmlZNodeQbDVg)
 * GitHub: [Flash0ver](https://github.com/Flash0ver)
 * NuGet: [Flash0ver](https://www.nuget.org/profiles/Flash0ver)
 * Stack Overflow: [FlashOver](https://stackoverflow.com/users/10167996/flashover)
@@ -22,6 +23,7 @@
 
 #### Community
 * Co-organizer of [DotNetDevs Austria](https://www.meetup.com/dotnet-austria/)
+* JetBrains Community Contributor (.NET)
 
 ---
 #### [TOC](./Content.md)

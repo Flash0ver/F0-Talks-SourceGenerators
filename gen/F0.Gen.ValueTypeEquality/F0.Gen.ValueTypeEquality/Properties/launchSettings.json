@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "F0.Gen.ValueTypeEquality": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\F0.Gen.ValueTypeEquality.Example\\F0.Gen.ValueTypeEquality.Example.csproj"
+    }
+  }
+}

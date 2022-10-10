@@ -1,5 +1,7 @@
 # Debugging
 
+Visual Studio 2019 _16.10_ or greater
+
 ```
   <PropertyGroup>
     <IsRoslynComponent>true</IsRoslynComponent>
