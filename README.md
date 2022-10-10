@@ -3,6 +3,11 @@ My talk on Roslyn-based Source Generators.
 
 ## Roslyn Source Generators - Never send a human to do a machine's job
 
+### 2022-10-10: Dotnetos Conference 2022
+- Online Conference
+- [Dotnetos Conference](https://conf.dotnetos.org/)
+- [Video](https://www.youtube.com/watch?v=DKp2ACeB06k)
+
 ### 2022-07-07: DWX 2022 - Developer Week 2022
 - Location: _Nürnberg Convention Center NCC Ost_
 - [DWX - Developer Week](https://www.developer-week.de/)

@@ -27,11 +27,11 @@
   - `file` access modifier
   - on top-level types
   - accessibility is scoped to the declaring source file
-    - nested types too
+    - also for nested types
   - enables shadowing of a non-`file`-local type by a `file`-local type
   - cannot be used in a member signature in non-`file`-local types
   - may implicitly implement a `file`-scoped interface type
-    - like implementing less-accessible interfaces
+    - see implementing less-accessible interfaces
   - `global using static` not permitted
 
 ---

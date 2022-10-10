@@ -1,14 +1,14 @@
 ﻿using Microsoft.CodeAnalysis.Testing;
 using Xunit;
-//using VerifyCS = F0.Gen.ValueTypeEquality.UnitTests.Verifiers.CSharpIncrementalGeneratorVerifier<F0.Gen.ValueTypeEquality.IncrementalValueTypeEqualityGenerator>;
-using VerifyCS = F0.Gen.ValueTypeEquality.UnitTests.Verifiers.CSharpSourceGeneratorVerifier<F0.Gen.ValueTypeEquality.ValueTypeEqualityGenerator>;
+using VerifyCS = F0.Gen.ValueTypeEquality.UnitTests.Verifiers.CSharpIncrementalGeneratorVerifier<F0.Gen.ValueTypeEquality.IncrementalValueTypeEqualityGenerator>;
+//using VerifyCS = F0.Gen.ValueTypeEquality.UnitTests.Verifiers.CSharpSourceGeneratorVerifier<F0.Gen.ValueTypeEquality.ValueTypeEqualityGenerator>;
 
 namespace F0.Gen.ValueTypeEquality.UnitTests;
 
 public class ValueTypeEqualityGeneratorUnitTests
 {
     [Fact]
-    public async Task Generator_NoCandidates_AddAttributeUnconditionally()
+    public async Task Generator_NoCandidates_AddNoSources()
     {
         string code = @"
 using System;
@@ -48,7 +48,7 @@ namespace Tests
     }
 
     [Fact]
-    public async Task Generator_WithCandidates_AddPartialMethods()
+    public async Task Generator_WithCandidates_AddPartialStructs()
     {
         string code = @"
 using System;

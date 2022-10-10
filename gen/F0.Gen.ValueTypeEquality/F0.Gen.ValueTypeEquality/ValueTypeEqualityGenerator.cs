@@ -89,7 +89,7 @@ partial struct {@struct.Name} : global::System.IEquatable<{@struct.Name}>
             if (context.Node is StructDeclarationSyntax @struct
                 && @struct.Modifiers.Any(static modifier => modifier.IsKind(SyntaxKind.PartialKeyword)))
             {
-                ISymbol? symbol = context.SemanticModel.GetDeclaredSymbol(@struct);
+                ISymbol? symbol = context.SemanticModel.GetDeclaredSymbol(@struct, CancellationToken.None);
 
                 if (symbol is INamedTypeSymbol type)
                 {

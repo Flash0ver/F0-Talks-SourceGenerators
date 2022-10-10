@@ -1,17 +1,18 @@
 ﻿using System.Diagnostics;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace F0.Gen.ValueTypeEquality;
 
-// [Generator(LanguageNames.CSharp)]
+[Generator(LanguageNames.CSharp)]
 internal sealed class IncrementalValueTypeEqualityGenerator : IIncrementalGenerator
 {
     private static readonly AssemblyName assembly = typeof(ValueTypeEqualityGenerator).Assembly.GetName();
     private static readonly string generatedCodeAttribute = $@"[global::System.CodeDom.Compiler.GeneratedCodeAttribute(""{assembly.Name}"", ""{assembly.Version}"")]";
-    
+
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
         IncrementalValuesProvider<INamedTypeSymbol> syntaxProvider = context.SyntaxProvider
@@ -29,11 +30,11 @@ internal sealed class IncrementalValueTypeEqualityGenerator : IIncrementalGenera
 
     private static INamedTypeSymbol? SemanticTransform(GeneratorSyntaxContext context, CancellationToken cancellationToken)
     {
-        var @struct = context.Node as StructDeclarationSyntax;
+        var @struct = Unsafe.As<StructDeclarationSyntax>(context.Node);
         Debug.Assert(@struct is not null);
 
-        ISymbol? symbol = context.SemanticModel.GetDeclaredSymbol(@struct);
-        
+        ISymbol? symbol = context.SemanticModel.GetDeclaredSymbol(@struct, cancellationToken);
+
         if (symbol is INamedTypeSymbol type)
         {
             INamedTypeSymbol? iEquatable = context.SemanticModel.Compilation.GetTypeByMetadataName("System.IEquatable`1");
