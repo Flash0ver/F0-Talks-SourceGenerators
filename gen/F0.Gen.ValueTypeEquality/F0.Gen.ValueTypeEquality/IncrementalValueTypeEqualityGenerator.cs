@@ -25,7 +25,7 @@ internal sealed class IncrementalValueTypeEqualityGenerator : IIncrementalGenera
     private static bool SyntacticPredicate(SyntaxNode node, CancellationToken cancellationToken)
     {
         return node is StructDeclarationSyntax @struct
-            && @struct.Modifiers.Any(static modifier => modifier.IsKind(SyntaxKind.PartialKeyword));
+            && @struct.Modifiers.Any(SyntaxKind.PartialKeyword);
     }
 
     private static INamedTypeSymbol? SemanticTransform(GeneratorSyntaxContext context, CancellationToken cancellationToken)

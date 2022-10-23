@@ -56,7 +56,7 @@ internal sealed class SyntaxReceiver : ISyntaxReceiver
     public void OnVisitSyntaxNode(SyntaxNode syntaxNode)
     {
         if (syntaxNode is MethodDeclarationSyntax method
-            && method.Modifiers.Any(static modifier => modifier.IsKind(SyntaxKind.PartialKeyword))
+            && method.Modifiers.Any(SyntaxKind.PartialKeyword)
             && method.ReturnType is PredefinedTypeSyntax predefined && predefined.Keyword.IsKind(SyntaxKind.StringKeyword))
         {
             Candidates.Add(method);
