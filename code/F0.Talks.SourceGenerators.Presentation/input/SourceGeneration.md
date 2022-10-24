@@ -18,8 +18,9 @@
 - avoid _Reflection_ with high-performance code
 
 ---
-- [Source Generators](https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/source-generators-overview)
-- [Design Document](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.md)
-- [Cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md)
+- [Source Generators Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/source-generators-overview)
+- [Source Generators Design Document](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.md)
+- [Source Generators Cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md)
+- [Incremental Generators](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.md)
 
 #### [TOC](./Content.md)

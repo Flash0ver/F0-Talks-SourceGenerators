@@ -17,6 +17,7 @@
 
 ---
 - [Source Generators Cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md)
+- [Incremental Generators](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.md)
 - [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet)
 - [Microsoft.CodeAnalysis.Testing](https://github.com/dotnet/roslyn-sdk/tree/main/src/Microsoft.CodeAnalysis.Testing)
 - [Stryker.NET](https://github.com/stryker-mutator/stryker-net)

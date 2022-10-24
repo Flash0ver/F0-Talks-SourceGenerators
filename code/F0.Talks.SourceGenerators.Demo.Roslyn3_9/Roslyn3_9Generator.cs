@@ -1,5 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace F0.Talks.SourceGenerators.Demo.Roslyn3_9;
@@ -16,8 +17,8 @@ internal sealed class Roslyn3_9Generator : ISourceGenerator
     public void Execute(GeneratorExecutionContext context)
     {
         Debug.Assert(context.SyntaxReceiver is null);
-        var receiver = context.SyntaxContextReceiver as SyntaxContextReceiver;
-        Debug.Assert(receiver is not null);
+        Debug.Assert(context.SyntaxContextReceiver is SyntaxContextReceiver);
+        var receiver = Unsafe.As<SyntaxContextReceiver>(context.SyntaxContextReceiver);
 
         INamedTypeSymbol? type = context.Compilation.GetTypeByMetadataName("PostInitialization.Roslyn3_9");
         bool hasPostInitialization = type is not null;

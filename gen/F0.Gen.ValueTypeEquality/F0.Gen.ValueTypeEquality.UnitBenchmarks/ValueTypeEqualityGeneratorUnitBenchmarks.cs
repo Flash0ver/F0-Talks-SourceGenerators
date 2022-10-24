@@ -7,7 +7,7 @@ namespace F0.Gen.ValueTypeEquality.UnitBenchmarks;
 public class ValueTypeEqualityGeneratorUnitBenchmarks
 {
     private readonly CSharpIncrementalGeneratorBenchmark<IncrementalValueTypeEqualityGenerator> benchmark = new();
-    // private readonly CSharpSourceGeneratorBenchmark<ValueTypeEqualityGenerator> benchmark = new();
+    //private readonly CSharpSourceGeneratorBenchmark<ValueTypeEqualityGenerator> benchmark = new();
 
     [GlobalSetup]
     public void Setup()
@@ -23,28 +23,39 @@ namespace Tests
         public string Text { get; init; }
     }
 
+    public partial class MyPartialClass
+    {
+        public int Number { get; init; }
+        public string Text { get; init; }
+    }
+
     public struct MyStruct
     {
         public int Number { get; init; }
         public string Text { get; init; }
     }
 
-    public struct MyEquatableStruct : IEquatable<MyStruct>
+    public partial struct MyEquatableStruct : IEquatable<MyEquatableStruct>
     {
         public int Number { get; init; }
         public string Text { get; init; }
 
-        public bool Equals(MyStruct other)
+        public bool Equals(MyEquatableStruct other)
         {
             throw new NotImplementedException();
         }
     }
 
+    public record class MyRecordClass(int Number, string Text);
+    public partial record class MyPartialRecordClass(int Number, string Text);
+
     public record struct MyRecordStruct(int Number, string Text);
+    public partial record struct MyPartialRecordStruct(int Number, string Text);
 
     public readonly record struct MyReadOnlyRecordStruct(int Number, string Text);
+    public readonly partial record struct MyReadOnlyPartialRecordStruct(int Number, string Text);
 
-    public partial struct MyPartialStruct
+    public readonly partial struct MyPartialStruct
     {
         public int Number { get; init; }
         public string Text { get; init; }
@@ -59,7 +70,7 @@ public partial struct MyGlobalStruct
 ";
 
         benchmark.Initialize(new CSharpIncrementalGeneratorBenchmarkInitializationContext
-        // benchmark.Initialize(new CSharpSourceGeneratorBenchmarkInitializationContext
+        //benchmark.Initialize(new CSharpSourceGeneratorBenchmarkInitializationContext
         {
             Source = code,
         });
@@ -132,19 +143,19 @@ partial struct MyGlobalStruct : global::System.IEquatable<MyGlobalStruct>
     }
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(""F0.Gen.ValueTypeEquality"", ""1.0.0.0"")]
-    public override int GetHashCode()
+    public readonly override int GetHashCode()
     {
         return global::System.HashCode.Combine(Character, Number);
     }
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(""F0.Gen.ValueTypeEquality"", ""1.0.0.0"")]
-    public override bool Equals([global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)] object? obj)
+    public readonly override bool Equals([global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)] object? obj)
     {
         return obj is MyGlobalStruct && Equals((MyGlobalStruct)obj);
     }
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute(""F0.Gen.ValueTypeEquality"", ""1.0.0.0"")]
-    public bool Equals(MyGlobalStruct other)
+    public readonly bool Equals(MyGlobalStruct other)
     {
         return global::System.Collections.Generic.EqualityComparer<char>.Default.Equals(Character, other.Character) && global::System.Collections.Generic.EqualityComparer<long>.Default.Equals(Number, other.Number);
     }
@@ -152,9 +163,9 @@ partial struct MyGlobalStruct : global::System.IEquatable<MyGlobalStruct>
 ";
 
         benchmark.Inspect(new CSharpIncrementalGeneratorBenchmarkInspectionContext
-        // benchmark.Inspect(new CSharpSourceGeneratorBenchmarkInspectionContext
+        //benchmark.Inspect(new CSharpSourceGeneratorBenchmarkInspectionContext
         {
-            Source = ("MyPartialStruct.ValueTypeEquality.g.cs", generatedStruct),
+            Source = ("Tests.MyPartialStruct.ValueTypeEquality.g.cs", generatedStruct),
             AdditionalSources = { ("MyGlobalStruct.ValueTypeEquality.g.cs", generatedGlobalStruct) },
         });
     }

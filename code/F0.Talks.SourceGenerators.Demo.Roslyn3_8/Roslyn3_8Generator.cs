@@ -4,6 +4,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.CodeDom.Compiler;
 using System.Diagnostics;
 using System.Globalization;
+using System.Runtime.CompilerServices;
 
 namespace F0.Talks.SourceGenerators.Demo.Roslyn3_8;
 
@@ -17,8 +18,8 @@ internal sealed class Roslyn3_8Generator : ISourceGenerator
 
     public void Execute(GeneratorExecutionContext context)
     {
-        var receiver = context.SyntaxReceiver as SyntaxReceiver;
-        Debug.Assert(receiver is not null);
+        Debug.Assert(context.SyntaxReceiver is SyntaxReceiver);
+        var receiver = Unsafe.As<SyntaxReceiver>(context.SyntaxReceiver);
 
         foreach (MethodDeclarationSyntax candidate in receiver.Candidates)
         {

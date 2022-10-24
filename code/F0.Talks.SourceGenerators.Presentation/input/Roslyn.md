@@ -1,6 +1,7 @@
 # Roslyn
 
 The .NET Compiler Platform
+(_C#_ and _Visual Basic_)
 
 [https://github.com/dotnet/roslyn](https://github.com/dotnet/roslyn)
 

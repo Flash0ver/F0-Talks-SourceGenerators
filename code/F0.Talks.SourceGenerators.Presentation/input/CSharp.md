@@ -1,10 +1,21 @@
 # C# language features
 
+## C# 2.0
+
+- partial types
+
+## C# 3.0
+
+- partial methods
+  - no accessibility modifiers
+  - return `void`
+  - no `out` parameters
+
 ## C# 9.0
 
 > "Support for code generators"
 
-- extensions to partial method syntax
+- extended partial methods
   - allow explicit access modifier
   - may be non-`private`
   - may have a non-`void` return type

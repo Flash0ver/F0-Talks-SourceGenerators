@@ -4,7 +4,7 @@
 
 (Agent Smith, The Matrix, 1999)
 
-### The Dotnetos Performance Edition
+### The .NET User Group Zürich Special
 
 ---
 #### [Speaker](./Speaker.md)
