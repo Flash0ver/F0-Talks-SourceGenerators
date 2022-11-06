@@ -1,12 +1,10 @@
 # Debugging
 
-Visual Studio 2019 _16.10_ or greater
+Visual Studio 2019 [16.10](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.10) or greater
 
 ```
   <PropertyGroup>
     <IsRoslynComponent>true</IsRoslynComponent>
-    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
-    <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)Generated</CompilerGeneratedFilesOutputPath>
   </PropertyGroup>
 ```
 

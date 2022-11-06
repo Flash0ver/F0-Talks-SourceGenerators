@@ -1,7 +1,7 @@
 #if NETFRAMEWORK
 using System.Diagnostics;
 
-namespace F0.Gen.ValueTypeEquality.UnitTests.Diagnostics;
+namespace F0.Gen.EqualityComparison.UnitTests.Diagnostics;
 
 internal sealed class DebugTraceListener : TraceListener
 {

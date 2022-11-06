@@ -2,6 +2,16 @@
 My talk on Roslyn-based Source Generators.
 
 ## Roslyn Source Generators - Never send a human to do a machine's job
+## Let's Code an incremental source generator with Roslyn
+## Let's Build an incremental source generator with Roslyn
+
+### 2022-10-25: JetBrains .NET Days Online 2022
+- Online Event
+- [Event page](https://pages.jetbrains.com/dotnet-days-2022/)
+- [Blog post](https://blog.jetbrains.com/dotnet/2022/09/19/join-us-for-dotnet-days-and-gamedev-day-online-2022/)
+- [Let's Build an incremental source generator with Roslyn](https://www.youtube.com/watch?v=azJm_Y2nbAI)
+- [Recording (Day 1)](https://youtu.be/u4UmUOYqzlU?t=2878)
+- [#JBDotNetDays 2022 Playlist](https://www.youtube.com/playlist?list=PLQ176FUIyIUbSS1HBVrqEyNHpfSh166KW)
 
 ### 2022-10-24: .NET User Group Zürich (October 2022)
 - Online Meetup

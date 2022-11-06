@@ -17,7 +17,7 @@ internal sealed class IncrementalValueTypeEqualityGenerator : IIncrementalGenera
 
     public void Initialize(IncrementalGeneratorInitializationContext context)
     {
-        IncrementalValuesProvider<StructContext> syntaxProvider = context.SyntaxProvider
+        IncrementalValuesProvider<StructContext> provider = context.SyntaxProvider
             .CreateSyntaxProvider(SyntacticPredicate, SemanticTransform)
             .Where(static (INamedTypeSymbol? type) => type is not null)
             .Collect()!
@@ -25,7 +25,7 @@ internal sealed class IncrementalValueTypeEqualityGenerator : IIncrementalGenera
             .Select(static (INamedTypeSymbol type, CancellationToken _) => TransformType(type))
             .WithComparer(StructContextEqualityComparer.Instance);
 
-        context.RegisterSourceOutput(syntaxProvider, Execute);
+        context.RegisterSourceOutput(provider, Execute);
     }
 
     private static bool SyntacticPredicate(SyntaxNode node, CancellationToken cancellationToken)
@@ -39,15 +39,15 @@ internal sealed class IncrementalValueTypeEqualityGenerator : IIncrementalGenera
         Debug.Assert(context.Node is StructDeclarationSyntax);
         var @struct = Unsafe.As<StructDeclarationSyntax>(context.Node);
 
-        ISymbol? symbol = context.SemanticModel.GetDeclaredSymbol(@struct, cancellationToken);
+        INamedTypeSymbol? symbol = context.SemanticModel.GetDeclaredSymbol(@struct, cancellationToken);
 
-        if (symbol is INamedTypeSymbol type)
+        if (symbol is not null)
         {
             INamedTypeSymbol? iEquatable = context.SemanticModel.Compilation.GetTypeByMetadataName("System.IEquatable`1");
 
-            if (!type.Interfaces.Any(@interface => @interface.OriginalDefinition.Equals(iEquatable, SymbolEqualityComparer.Default)))
+            if (!symbol.Interfaces.Any(@interface => @interface.OriginalDefinition.Equals(iEquatable, SymbolEqualityComparer.Default)))
             {
-                return type;
+                return symbol;
             }
         }
 

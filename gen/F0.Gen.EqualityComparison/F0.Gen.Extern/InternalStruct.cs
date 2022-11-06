@@ -1,0 +1,13 @@
+namespace F0.Gen.Extern;
+
+internal readonly record struct InternalStruct
+{
+    public InternalStruct(int number, string text)
+    {
+        Number = number;
+        Text = text;
+    }
+
+    public int Number { get; init; }
+    public string Text { get; init; }
+}

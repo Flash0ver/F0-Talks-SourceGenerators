@@ -101,16 +101,16 @@ partial struct {@struct.Name} : global::System.IEquatable<{@struct.Name}>
             if (context.Node is StructDeclarationSyntax @struct
                 && @struct.Modifiers.Any(SyntaxKind.PartialKeyword))
             {
-                ISymbol? symbol = context.SemanticModel.GetDeclaredSymbol(@struct, CancellationToken.None);
+                INamedTypeSymbol? symbol = context.SemanticModel.GetDeclaredSymbol(@struct, CancellationToken.None);
 
-                if (symbol is INamedTypeSymbol type)
+                if (symbol is not null)
                 {
                     INamedTypeSymbol? iEquatable = context.SemanticModel.Compilation.GetTypeByMetadataName("System.IEquatable`1");
 
-                    if (!type.Interfaces.Any(@interface => @interface.OriginalDefinition.Equals(iEquatable, SymbolEqualityComparer.Default)))
+                    if (!symbol.Interfaces.Any(@interface => @interface.OriginalDefinition.Equals(iEquatable, SymbolEqualityComparer.Default)))
                     {
                         CandidateStructs ??= new List<INamedTypeSymbol>();
-                        CandidateStructs.Add(type);
+                        CandidateStructs.Add(symbol);
                     }
                 }
             }
