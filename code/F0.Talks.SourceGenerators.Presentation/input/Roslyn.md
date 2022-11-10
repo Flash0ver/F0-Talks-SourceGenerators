@@ -3,6 +3,8 @@
 The .NET Compiler Platform
 (_C#_ and _Visual Basic_)
 
+`Microsoft.CodeAnalysis`
+
 [https://github.com/dotnet/roslyn](https://github.com/dotnet/roslyn)
 
 - [DiagnosticAnalyzer](https://docs.microsoft.com/dotnet/api/microsoft.codeanalysis.diagnostics.diagnosticanalyzer)
