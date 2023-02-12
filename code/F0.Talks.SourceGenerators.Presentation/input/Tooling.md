@@ -15,7 +15,11 @@
   - [.NET Compiler Platform SDK](https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/)
 - [RoslynQuoter](https://roslynquoter.azurewebsites.net/)
 - [Source Browser](https://sourceroslyn.io/)
+  - [//grep.app](https://grep.app/search?filter[repo][0]=dotnet/roslyn)
 - [Decompilation Differ](https://wengier.com/DecompilationDiffer/)
+- [MSBuild Binary and Structured Log Viewer](https://msbuildlog.com/)
+  - [Structured Log Viewer](https://live.msbuildlog.com/)
+- [NuGet Package Explorer](https://nuget.info/)
 
 ---
 - [Saving source generator output in source control (Andrew Lock)](https://andrewlock.net/creating-a-source-generator-part-6-saving-source-generator-output-in-source-control/)

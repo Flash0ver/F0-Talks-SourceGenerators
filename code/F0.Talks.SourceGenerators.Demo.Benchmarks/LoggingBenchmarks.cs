@@ -13,7 +13,7 @@ namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 [MemoryDiagnoser]
 public class LoggingBenchmarks
 {
-    private readonly string name = "Dotnetos Conference";
+    private readonly string name = "Update Conference Prague";
     private readonly int number = 2022;
 
     [ParamsSource(nameof(Loggers))]

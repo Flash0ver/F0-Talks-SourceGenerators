@@ -31,4 +31,6 @@ Visual Studio 2019 [16.10](https://docs.microsoft.com/en-us/visualstudio/release
 ```
 
 ---
+- [Debugging C# Source Generators with Visual Studio 2019 16.10](https://stevetalkscode.co.uk/debug-source-generators-with-vs2019-1610)
+
 #### [TOC](./Content.md)

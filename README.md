@@ -5,10 +5,16 @@ My talk on Roslyn-based Source Generators.
 ## Let's Code an incremental source generator with Roslyn
 ## Let's Build an incremental source generator with Roslyn
 
+### 2022-11-10: Update Conference Prague 2022
+- Venue: _Clarion Congress Hotel Prague_
+- [Update Conference](https://www.updateconference.net/)
+- [Speaker page](https://www.updateconference.net/en/2022/speaker/stefan-pölz)
+- [Session detail](https://www.updateconference.net/en/2022/session/let-s-code-an-incremental-source-generator-with-roslyn)
+
 ### 2022-10-25: JetBrains .NET Days Online 2022
 - Online Event
 - [Event page](https://pages.jetbrains.com/dotnet-days-2022/)
-- [Blog post](https://blog.jetbrains.com/dotnet/2022/09/19/join-us-for-dotnet-days-and-gamedev-day-online-2022/)
+- [Blog post](https://blog.jetbrains.com/dotnet/2022/11/10/dotnet-days-gamedev-day-online-2022-recordings/)
 - [Let's Build an incremental source generator with Roslyn](https://www.youtube.com/watch?v=azJm_Y2nbAI)
 - [Recording (Day 1)](https://youtu.be/u4UmUOYqzlU?t=2878)
 - [#JBDotNetDays 2022 Playlist](https://www.youtube.com/playlist?list=PLQ176FUIyIUbSS1HBVrqEyNHpfSh166KW)

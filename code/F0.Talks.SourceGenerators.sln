@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "F0.Talks.SourceGenerators.D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "F0.Talks.SourceGenerators.Demo.Roslyn4_2", "F0.Talks.SourceGenerators.Demo.Roslyn4_2\F0.Talks.SourceGenerators.Demo.Roslyn4_2.csproj", "{F2CBA9AC-6F02-4A38-828D-7880C5D9B657}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "F0.Talks.SourceGenerators.Demo.Tests", "F0.Talks.SourceGenerators.Demo.Tests\F0.Talks.SourceGenerators.Demo.Tests.csproj", "{E9610CD6-5629-4501-A79A-E4EFCEE66917}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "F0.Talks.SourceGenerators.Demo.Roslyn4_3", "F0.Talks.SourceGenerators.Demo.Roslyn4_3\F0.Talks.SourceGenerators.Demo.Roslyn4_3.csproj", "{A0B85025-FE9A-4C75-9430-6B32AFA435C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "F0.Talks.SourceGenerators.Demo.Tests", "F0.Talks.SourceGenerators.Demo.Tests\F0.Talks.SourceGenerators.Demo.Tests.csproj", "{E9610CD6-5629-4501-A79A-E4EFCEE66917}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "F0.Talks.SourceGenerators.Demo.WpfApp", "F0.Talks.SourceGenerators.Demo.WpfApp\F0.Talks.SourceGenerators.Demo.WpfApp.csproj", "{C53001AD-ABF7-48CD-AB8D-A0FB48A2F721}"
 EndProject
@@ -51,6 +53,10 @@ Global
 		{F2CBA9AC-6F02-4A38-828D-7880C5D9B657}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2CBA9AC-6F02-4A38-828D-7880C5D9B657}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2CBA9AC-6F02-4A38-828D-7880C5D9B657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B85025-FE9A-4C75-9430-6B32AFA435C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B85025-FE9A-4C75-9430-6B32AFA435C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B85025-FE9A-4C75-9430-6B32AFA435C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B85025-FE9A-4C75-9430-6B32AFA435C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E9610CD6-5629-4501-A79A-E4EFCEE66917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E9610CD6-5629-4501-A79A-E4EFCEE66917}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9610CD6-5629-4501-A79A-E4EFCEE66917}.Release|Any CPU.ActiveCfg = Release|Any CPU

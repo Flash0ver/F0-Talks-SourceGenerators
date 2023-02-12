@@ -11,7 +11,7 @@
   - added [ISyntaxContextReceiver][isyntaxcontextreceiver] and PostInitialization
   - .NET SDK 5.0.200
   - Visual Studio v16.9.0
-  - Rider 2020.3
+  - Rider 2021.2
 - Roslyn 4.0
   - `Microsoft.CodeAnalysis 4.0.1`
   - added [IIncrementalGenerator][iincrementalgenerator]
@@ -36,7 +36,9 @@
 - [Microsoft.CodeAnalysis.Common 3.9 API Diff](https://www.fuget.org/packages/Microsoft.CodeAnalysis.Common/3.9.0/lib/netstandard2.0/diff/3.8.0/)
 - [Microsoft.CodeAnalysis.Common 4.0 API Diff](https://www.fuget.org/packages/Microsoft.CodeAnalysis.Common/4.0.1/lib/netstandard2.0/diff/3.11.0/)
 - [Microsoft.CodeAnalysis.Common 4.2 API Diff](https://www.fuget.org/packages/Microsoft.CodeAnalysis.Common/4.2.0/lib/netstandard2.0/diff/4.1.0/)
-- [Fix metadata references declaration #58059](https://github.com/dotnet/roslyn/pull/58059)
+  - [Fix metadata references declaration #58059](https://github.com/dotnet/roslyn/pull/58059)
+- [Microsoft.CodeAnalysis.Common 4.3 API Diff](https://www.fuget.org/packages/Microsoft.CodeAnalysis.Common/4.3.1/lib/netstandard2.0/diff/4.2.0/)
+  - [Higher Level SyntaxProvider APIs for incremental generators #54725](https://github.com/dotnet/roslyn/issues/54725)
 
 #### [TOC](./Content.md)
 
