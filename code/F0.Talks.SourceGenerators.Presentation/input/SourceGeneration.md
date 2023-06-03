@@ -9,8 +9,8 @@
 - additive only
 - can produce diagnostics
 - may access additional files (non-C# source texts)
-- un-ordered
-  - no access to files created by other source generators
+- oblivious
+  - no access to documents created by other source generators
 - are technically analyzers
 
 ## Use cases

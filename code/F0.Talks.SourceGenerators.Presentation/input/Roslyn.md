@@ -3,7 +3,7 @@
 The .NET Compiler Platform
 (_C#_ and _Visual Basic_)
 
-`Microsoft.CodeAnalysis`
+[Microsoft.CodeAnalysis](https://www.nuget.org/packages/Microsoft.CodeAnalysis)
 
 [https://github.com/dotnet/roslyn](https://github.com/dotnet/roslyn)
 

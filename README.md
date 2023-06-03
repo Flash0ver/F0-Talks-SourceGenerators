@@ -5,6 +5,11 @@ My talk on Roslyn-based Source Generators.
 ## Let's Code an incremental source generator with Roslyn
 ## Let's Build an incremental source generator with Roslyn
 
+### 2023-01-27: NDC London 2023
+- Venue: _Queen Elizabeth II Centre_
+- [NDC Conferences](https://ndcconferences.com)
+- [NDC London](https://ndclondon.com)
+
 ### 2022-11-10: Update Conference Prague 2022
 - Venue: _Clarion Congress Hotel Prague_
 - [Update Conference](https://www.updateconference.net/)
@@ -40,7 +45,6 @@ My talk on Roslyn-based Source Generators.
 - Venue: _Queen Elizabeth II Centre_
 - [NDC Conferences](https://ndcconferences.com)
 - [NDC London](https://ndclondon.com)
-- Video: TBP
 
 ### 2022-02-23: PostSharp Webinar
 - Live Webinar

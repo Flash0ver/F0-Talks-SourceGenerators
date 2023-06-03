@@ -6,7 +6,7 @@ return await Bootstrapper
     .CreateDefault(args)
     .BuildPipeline("Render Presentation", static builder => builder
         .WithInputReadFiles("*.md")
-        .WithProcessModules(new LinkModule(), new RenderMarkdown())
+        .WithProcessModules(new LinkModule(), new RenderMarkdown().UseExtensions())
         .WithPostProcessModules(new SlideModule())
         .WithOutputWriteFiles(".html"))
     .BuildPipeline("Copy CSS", static builder => builder

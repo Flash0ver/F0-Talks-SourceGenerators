@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "F0.Gen.IsEnumDefined": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\F0.Gen.IsEnumDefined.Example\\F0.Gen.IsEnumDefined.Example.csproj"
+    }
+  }
+}

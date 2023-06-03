@@ -13,8 +13,8 @@ namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 [MemoryDiagnoser]
 public class LoggingBenchmarks
 {
-    private readonly string name = "Update Conference Prague";
-    private readonly int number = 2022;
+    private readonly string name = "NDC London";
+    private readonly int number = 2023;
 
     [ParamsSource(nameof(Loggers))]
     public ILogger Logger { get; set; } = null!;
@@ -65,7 +65,7 @@ internal sealed class MyLogger : ILogger
         this.minLevel = minLevel;
     }
 
-    public IDisposable BeginScope<TState>(TState state)
+    public IDisposable BeginScope<TState>(TState state) where TState : notnull
     {
         return NullDisposable.Instance;
     }
@@ -81,7 +81,7 @@ internal sealed class MyLogger : ILogger
         // no-op
     }
 
-    public override string? ToString()
+    public override string ToString()
     {
         return $"Min: {EnumInfo.GetName(minLevel)}";
     }
