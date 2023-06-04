@@ -34,16 +34,20 @@ internal sealed class Roslyn3_9Generator : ISourceGenerator
 
     private static void PostInitialization(GeneratorPostInitializationContext context)
     {
-        const string source = @"namespace PostInitialization;
+        //language=c#
+        const string source = """
+            namespace PostInitialization;
 
-internal static class Roslyn3_9
-{
-    internal static string Get()
-    {
-        return ""PostInitialization"";
-    }
-}
-";
+            internal static class Roslyn3_9
+            {
+                internal static string Get()
+                {
+                    return "PostInitialization";
+                }
+            }
+
+            """;
+
         context.AddSource("PostInitialization.g.cs", source);
     }
 }

@@ -18,14 +18,17 @@ internal sealed class Roslyn4_3Generator : IIncrementalGenerator
         context.RegisterPostInitializationOutput(static void (IncrementalGeneratorPostInitializationContext context) =>
         {
             const string hintName = "F0.GeneratedNamespace.GeneratedAttribute.g.cs";
-            string source = $@"namespace F0.GeneratedNamespace;
+            //language=c#
+            string source = $$"""
+                namespace F0.GeneratedNamespace;
 
-{generatedCodeAttribute}
-[global::System.AttributeUsage(global::System.AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
-internal sealed class GeneratedAttribute : global::System.Attribute
-{{
-}}
-";
+                {{generatedCodeAttribute}}
+                [global::System.AttributeUsage(global::System.AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
+                internal sealed class GeneratedAttribute : global::System.Attribute
+                {
+                }
+
+                """;
 
             context.AddSource(hintName, source);
         });

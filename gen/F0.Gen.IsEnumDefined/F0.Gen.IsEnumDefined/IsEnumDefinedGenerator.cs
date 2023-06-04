@@ -74,7 +74,7 @@ internal sealed partial class IsEnumDefinedGenerator : IIncrementalGenerator
                 return new IsEnumDefinedType(source.Symbol.ContainingNamespace.IsGlobalNamespace,
                     source.Symbol.ContainingNamespace.ToDisplayString(),
                     source.Symbol.Name,
-                    methods.ToImmutable());
+                    methods.MoveToImmutable());
             })
             .WithComparer(_comparer);
 
@@ -104,6 +104,7 @@ internal sealed partial class IsEnumDefinedGenerator : IIncrementalGenerator
             {
                 IsEnumDefinedMethod method = source.Methods[i];
 
+                document.WriteLine($"[{_generatedCodeAttribute}]");
                 document.WriteLine($"public static bool IsDefined({method.EnumName} value)");
                 document.WriteLine('{');
                 document.Indent++;

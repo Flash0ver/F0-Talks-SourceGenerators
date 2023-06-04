@@ -1,6 +1,7 @@
 # Debugging
 
-Visual Studio 2019 [16.10](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes-v16.10) or greater
+- Visual Studio 2019 [16.10](https://learn.microsoft.com/visualstudio/releases/2019/release-notes-v16.10) or greater
+- Rider [2023.1](https://www.jetbrains.com/rider/whatsnew/2023-1/)
 
 ```
   <PropertyGroup>

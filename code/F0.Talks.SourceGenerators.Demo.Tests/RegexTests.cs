@@ -33,6 +33,7 @@ public partial class RegexTests
     [InlineData("0x_F0")]
     [InlineData("Backdraft")]
     [InlineData("NDC London 2023")]
+    [InlineData("NDC Oslo 2023")]
     public void IsMatch_Mismatch_ReturnFalse(string text)
     {
         _regex.IsMatch(text).Should().BeFalse();

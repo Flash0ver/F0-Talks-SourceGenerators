@@ -16,6 +16,7 @@
 ## Use cases
 - avoid tedious boilerplate (error-prone) code written manual
 - avoid _Reflection_ with high-performance code
+- facilitate _Trimming_ and _Native AOT_
 
 ---
 - [Source Generators Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/source-generators-overview)

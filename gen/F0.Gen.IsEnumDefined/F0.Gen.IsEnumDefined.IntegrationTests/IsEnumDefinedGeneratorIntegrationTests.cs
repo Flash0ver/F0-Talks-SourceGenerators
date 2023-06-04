@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using FluentAssertions;
+using Microsoft.Extensions.Logging;
 using Roslyn.Generated;
 using Xunit;
 
@@ -21,10 +22,10 @@ public class IsEnumDefinedGeneratorIntegrationTests
         var logLevel = (LogLevel)underlying;
 
         bool bcl = Bcl(logLevel);
-        bool actual = EnumInfo.IsDefined(logLevel);
+        bool generated = EnumInfo.IsDefined(logLevel);
 
-        Assert.Equal(expected, bcl);
-        Assert.Equal(expected, actual);
+        bcl.Should().Be(expected);
+        generated.Should().Be(expected);
 
         static bool Bcl(LogLevel logLevel)
         {
@@ -32,6 +33,26 @@ public class IsEnumDefinedGeneratorIntegrationTests
             return Enum.IsDefined(typeof(LogLevel), logLevel);
 #else
             return Enum.IsDefined(logLevel);
+#endif
+        }
+    }
+
+    [Fact]
+    public void Are_All_Values_Defined()
+    {
+        foreach (LogLevel value in GetValues())
+        {
+            var actual = EnumInfo.IsDefined(value);
+
+            actual.Should().BeTrue();
+        }
+
+        static Array GetValues()
+        {
+#if NET472
+            return Enum.GetValues(typeof(LogLevel));
+#else
+            return Enum.GetValues<LogLevel>();
 #endif
         }
     }

@@ -16,12 +16,13 @@
 * Microsoft MVP (Developer Technologies)
 * Co-organizer of [DotNetDevs.at](https://www.meetup.com/dotnet-austria)
 
-## Channels
+#### Channels
 * Twitch: [FlashOWare](https://www.twitch.tv/flashoware)
 * YouTube: [FlashOWare](https://www.youtube.com/@FlashOWare)
 
 #### Alter egos
 * Twitter: [@0x_F0](https://twitter.com/0x_F0)
+* Mastodon: [@0x_F0@dotnet.social](https://dotnet.social/@0x_F0)
 * GitHub: [Flash0ver](https://github.com/Flash0ver)
 * NuGet: [Flash0ver](https://www.nuget.org/profiles/Flash0ver)
 * Stack Overflow: [FlashOver](https://stackoverflow.com/users/10167996/flashover)

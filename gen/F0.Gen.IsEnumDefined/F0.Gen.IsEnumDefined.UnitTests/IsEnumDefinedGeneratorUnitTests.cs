@@ -65,6 +65,7 @@ public class IsEnumDefinedGeneratorUnitTests
 
             partial class EnumInfo
             {
+                [global::System.CodeDom.Compiler.GeneratedCodeAttribute("F0.Gen.IsEnumDefined", "1.0.0.0")]
                 public static bool IsDefined(global::System.StringComparison value)
                 {
                     return value is
@@ -113,7 +114,7 @@ public class IsEnumDefinedGeneratorUnitTests
             internal static partial class EnumInfo
             {
             }
-            
+
             namespace Microsoft.Extensions.Logging
             {
                 public enum LogLevel
@@ -131,6 +132,7 @@ public class IsEnumDefinedGeneratorUnitTests
 
             partial class EnumInfo
             {
+                [global::System.CodeDom.Compiler.GeneratedCodeAttribute("F0.Gen.IsEnumDefined", "1.0.0.0")]
                 public static bool IsDefined(global::System.StringComparison value)
                 {
                     return value is
@@ -142,6 +144,7 @@ public class IsEnumDefinedGeneratorUnitTests
                         global::System.StringComparison.OrdinalIgnoreCase;
                 }
 
+                [global::System.CodeDom.Compiler.GeneratedCodeAttribute("F0.Gen.IsEnumDefined", "1.0.0.0")]
                 public static bool IsDefined(global::System.StringSplitOptions value)
                 {
                     return value is
@@ -159,6 +162,7 @@ public class IsEnumDefinedGeneratorUnitTests
 
             partial class EnumInfo
             {
+                [global::System.CodeDom.Compiler.GeneratedCodeAttribute("F0.Gen.IsEnumDefined", "1.0.0.0")]
                 public static bool IsDefined(global::Microsoft.Extensions.Logging.LogLevel value)
                 {
                     return false;

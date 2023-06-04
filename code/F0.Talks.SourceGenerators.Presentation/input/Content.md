@@ -11,6 +11,7 @@
 1. [Versioning](./Versioning.md)
 1. [Performance](./Performance.md)
 1. [NuGet](./NuGet.md)
+1. [Testing](./Testing.md)
 1. [Best Practices](./BestPractices.md)
 1. [Get started](./Kickstart.md)
 1. [Examples](./Examples.md)
