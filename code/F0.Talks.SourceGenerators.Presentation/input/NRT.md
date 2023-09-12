@@ -1,7 +1,7 @@
 # Nullable reference types
 
 - C# 8.0 vs .NET Standard 2.0
-  - [C# language versioning](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version)
+  - [C# language versioning](https://learn.microsoft.com/dotnet/csharp/language-reference/configure-language-version)
 
 ```
   <PropertyGroup>
@@ -24,8 +24,8 @@
 ```
 
 ---
-- [Nullable Reference Types](https://docs.microsoft.com/en-us/dotnet/csharp/nullable-references)
-- [Nullable Attributes](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/attributes/nullable-analysis)
+- [Nullable Reference Types](https://learn.microsoft.com/dotnet/csharp/nullable-references)
+- [Nullable Attributes](https://learn.microsoft.com/dotnet/csharp/language-reference/attributes/nullable-analysis)
 - [Package: Nullable](https://www.nuget.org/packages/Nullable/)
 
 #### [TOC](./Content.md)

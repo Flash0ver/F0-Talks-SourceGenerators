@@ -47,9 +47,9 @@
 
 ---
 #### References
-- [partial method](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/partial-method)
-- [ModuleInitializerAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.moduleinitializerattribute)
-- [file keyword](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/file)
-- [File-local types](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-11.0/file-local-types)
+- [partial method](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/partial-method)
+- [ModuleInitializerAttribute](https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.moduleinitializerattribute)
+- [file keyword](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/file)
+- [File-local types](https://learn.microsoft.com/dotnet/csharp/language-reference/proposals/csharp-11.0/file-local-types)
 
 #### [TOC](./Content.md)
