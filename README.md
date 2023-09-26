@@ -5,6 +5,12 @@ My talk on Roslyn-based Source Generators.
 ## Let's Code an incremental source generator with Roslyn
 ## Let's Build an incremental source generator with Roslyn
 
+### 2023-09-12: WUG Days 2023.2
+- Venue: _Faculty of Electrical Engineering and Communication, Brno_
+- [WUG Days 2023.2](https://wug.cz/brno/akce/1550-WUG-Days-2023-2)
+- [Speaker page](https://wug.cz/prednasejici/322-Stefan-Polz)
+- [Session detail](https://wug.cz/brno/akce/1608-Let-s-Code-an-incremental-source-generator-with-Roslyn)
+
 ### 2023-05-26: NDC Oslo 2023
 - Venue: _Oslo Spektrum_
 - [NDC Conferences](https://ndcconferences.com)

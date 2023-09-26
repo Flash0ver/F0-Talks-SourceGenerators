@@ -32,8 +32,7 @@ public partial class RegexTests
     [Theory]
     [InlineData("0x_F0")]
     [InlineData("Backdraft")]
-    [InlineData("NDC London 2023")]
-    [InlineData("NDC Oslo 2023")]
+    [InlineData("WUG Days 2023.2")]
     public void IsMatch_Mismatch_ReturnFalse(string text)
     {
         _regex.IsMatch(text).Should().BeFalse();

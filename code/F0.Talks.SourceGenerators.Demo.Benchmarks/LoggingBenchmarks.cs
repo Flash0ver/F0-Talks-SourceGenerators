@@ -13,7 +13,7 @@ namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 [MemoryDiagnoser]
 public class LoggingBenchmarks
 {
-    private readonly string name = "NDC Oslo";
+    private readonly string name = "WUG Days";
     private readonly int number = 2023;
 
     [ParamsSource(nameof(Loggers))]
