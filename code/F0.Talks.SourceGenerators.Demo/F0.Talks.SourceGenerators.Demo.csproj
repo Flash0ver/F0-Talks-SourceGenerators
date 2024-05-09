@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
@@ -12,7 +12,12 @@
     <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)Generated</CompilerGeneratedFilesOutputPath>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <InterceptorsPreviewNamespaces>$(InterceptorsPreviewNamespaces);F0.Talks.SourceGenerators.Demo.Generated</InterceptorsPreviewNamespaces>
+  </PropertyGroup>
+
   <ItemGroup>
+    <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Interceptors\F0.Talks.SourceGenerators.Demo.Interceptors.csproj" />
     <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn3_8\F0.Talks.SourceGenerators.Demo.Roslyn3_8.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
     <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn3_9\F0.Talks.SourceGenerators.Demo.Roslyn3_9.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
     <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn4_0\F0.Talks.SourceGenerators.Demo.Roslyn4_0.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />

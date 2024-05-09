@@ -22,6 +22,7 @@
 - [Source Generators Documentation](https://learn.microsoft.com/dotnet/csharp/roslyn-sdk/source-generators-overview)
 - [Source Generators Design Document](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.md)
 - [Source Generators Cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md)
-- [Incremental Generators](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.md)
+- [Incremental Generators Design Document](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.md)
+- [Incremental Generators Cookbook](https://github.com/dotnet/roslyn/blob/main/docs/features/incremental-generators.cookbook.md)
 
 #### [TOC](./Content.md)

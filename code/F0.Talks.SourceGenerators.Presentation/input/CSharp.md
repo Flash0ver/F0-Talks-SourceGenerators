@@ -45,11 +45,31 @@
     - see implementing less-accessible interfaces
   - `global using static` not permitted
 
+## C# 12.0
+
+- experimental Interceptors
+  - `[InterceptsLocation]`
+    ```CSharp
+    namespace System.Runtime.CompilerServices
+    {
+        [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
+        public sealed class InterceptsLocationAttribute(string filePath, int line, int character) : Attribute
+        {
+        }
+    }
+    ```
+  - ordinary Methods only
+  - contained in non-generic type
+  - one or more `[InterceptsLocation]` attributes
+  - requires matching signatures
+  - Static Methods or Extension Methods
+
 ---
 #### References
 - [partial method](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/partial-method)
 - [ModuleInitializerAttribute](https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.moduleinitializerattribute)
 - [file keyword](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/file)
 - [File-local types](https://learn.microsoft.com/dotnet/csharp/language-reference/proposals/csharp-11.0/file-local-types)
+- [Interceptors](https://github.com/dotnet/roslyn/blob/main/docs/features/interceptors.md)
 
 #### [TOC](./Content.md)

@@ -4,6 +4,13 @@ My talk on Roslyn-based Source Generators.
 ## Roslyn Source Generators - Never send a human to do a machine's job
 ## Let's Code an incremental source generator with Roslyn
 ## Let's Build an incremental source generator with Roslyn
+## Experimental C# Interceptors: AOT & Performance for free
+
+### 2023-11-16: .NET Conf 2023
+- Online Conference
+- [.NET Conf](https://www.dotnetconf.net/)
+- [Session Recording](https://www.youtube.com/watch?v=wadfRRrEOh4&list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU&index=62)
+- [Playlist](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oULyHSPBx-tQzePOYlhvrAU)
 
 ### 2023-09-12: WUG Days 2023.2
 - Venue: _Faculty of Electrical Engineering and Communication, Brno_

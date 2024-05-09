@@ -1,6 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
 using F0.GeneratedNamespace;
 using F0.Talks.SourceGenerators.Demo;
+using F0.Talks.SourceGenerators.Demo.Interceptors;
 
 JsonSerializerDemo.Roundtrip();
 Console.WriteLine();
@@ -13,6 +14,11 @@ Console.WriteLine($"Roslyn 3.9: {PostInitialization.Roslyn3_9.Get()}");
 Console.WriteLine($"Roslyn 4.0: {new Generated1().Number}");
 
 Console.WriteLine($"Roslyn 4.3: {Helper.GetNumber()}");
+
+Console.WriteLine();
+Console.WriteLine("Interceptors:");
+Console.WriteLine($"- {Intercepted.Static("Hello, World!")}");
+Console.WriteLine($"- {new Intercepted().Instance(".NET Conf 2023")}");
 
 public static partial class Helper
 {

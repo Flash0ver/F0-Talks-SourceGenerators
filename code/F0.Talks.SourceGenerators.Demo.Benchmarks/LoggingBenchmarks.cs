@@ -1,5 +1,4 @@
 ﻿using BenchmarkDotNet.Attributes;
-using F0.Generated;
 using F0.Primitives;
 using Microsoft.Extensions.Logging;
 
@@ -10,10 +9,11 @@ namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 /// <seealso href="https://learn.microsoft.com/dotnet/core/extensions/high-performance-logging">High-performance logging in .NET</seealso>
 /// <seealso href="https://learn.microsoft.com/aspnet/core/fundamentals/logging/loggermessage">High-performance logging with LoggerMessage in ASP.NET Core</seealso>
 /// </summary>
-[MemoryDiagnoser]
+[ShortRunJob]
+[MemoryDiagnoser(false)]
 public class LoggingBenchmarks
 {
-    private readonly string name = "WUG Days";
+    private readonly string name = ".NET Conf";
     private readonly int number = 2023;
 
     [ParamsSource(nameof(Loggers))]
@@ -35,7 +35,7 @@ public class LoggingBenchmarks
     }
 
     [Benchmark]
-    public void LoggerExtensionsIsEnabled()
+    public void LoggerExtensions_IsEnabled()
     {
         if (Logger.IsEnabled(LogLevel.Information))
         {
@@ -44,7 +44,7 @@ public class LoggingBenchmarks
     }
 
     [Benchmark]
-    public void LoggerMessageGenerator()
+    public void LoggerMessage_Generator()
     {
         Logger.Hello(name, number);
     }
@@ -83,6 +83,6 @@ internal sealed class MyLogger : ILogger
 
     public override string ToString()
     {
-        return $"Min: {EnumInfo.GetName(minLevel)}";
+        return $"Min: {Enum.GetName(minLevel)}";
     }
 }
