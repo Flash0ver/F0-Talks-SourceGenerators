@@ -1,10 +1,18 @@
 # F0-Talks-SourceGenerators
 My talk on Roslyn-based Source Generators.
 
-## Roslyn Source Generators - Never send a human to do a machine's job
-## Let's Code an incremental source generator with Roslyn
-## Let's Build an incremental source generator with Roslyn
-## Experimental C# Interceptors: AOT & Performance for free
+## Sessions
+- Roslyn Source Generators - Never send a human to do a machine's job
+- Let's Code an incremental source generator with Roslyn
+- Let's Build an incremental source generator with Roslyn
+- Experimental C# Interceptors: AOT & Performance for free
+- More Roslyn Source Generators
+
+### 2023-11-24: Update Conference Prague 2023
+- Venue: _Clarion Congress Hotel Prague_
+- [Update Conference](https://www.updateconference.net/)
+- [Speaker page](https://www.updateconference.net/en/2023/speaker/stefan-pölz)
+- [Session detail](https://www.updateconference.net/en/2023/session/more-roslyn-source-generators)
 
 ### 2023-11-16: .NET Conf 2023
 - Online Conference
