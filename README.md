@@ -7,6 +7,12 @@ My talk on Roslyn-based Source Generators.
 - Let's Build an incremental source generator with Roslyn
 - Experimental C# Interceptors: AOT & Performance for free
 - More Roslyn Source Generators
+- An Ode to Roslyn Source Generators
+
+### 2024-01-29: .NET Notts (January 2024)
+- Online Meetup
+- [.NET Notts](https://www.meetup.com/dotnetnotts/)
+- [Event: Lightning Talks Evening!](https://www.meetup.com/dotnetnotts/events/298372960)
 
 ### 2023-11-24: Update Conference Prague 2023
 - Venue: _Clarion Congress Hotel Prague_

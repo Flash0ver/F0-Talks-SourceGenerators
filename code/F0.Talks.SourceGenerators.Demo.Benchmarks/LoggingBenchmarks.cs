@@ -13,8 +13,8 @@ namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 [MemoryDiagnoser(false)]
 public class LoggingBenchmarks
 {
-    private readonly string name = "Update Conference Prague";
-    private readonly int number = 2023;
+    private readonly string name = ".NET Notts";
+    private readonly int number = 2024;
 
     [ParamsSource(nameof(Loggers))]
     public ILogger Logger { get; set; } = null!;
