@@ -9,8 +9,13 @@ My talk on Roslyn-based Source Generators.
 - More Roslyn Source Generators
 - An Ode to Roslyn Source Generators
 
+### 2024-05-07: Coding Club Vienna (May 2024)
+- In Person Meetup
+- [Coding Club Vienna](https://www.meetup.com/coding-club-vienna/)
+- [Event: Coding Club Presents](https://www.meetup.com/coding-club-vienna/events/300550071)
+
 ### 2024-01-29: .NET Notts (January 2024)
-- Online Meetup
+- Hybrid Meetup
 - [.NET Notts](https://www.meetup.com/dotnetnotts/)
 - [Event: Lightning Talks Evening!](https://www.meetup.com/dotnetnotts/events/298372960)
 

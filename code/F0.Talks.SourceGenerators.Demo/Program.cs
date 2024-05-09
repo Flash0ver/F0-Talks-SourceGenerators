@@ -18,7 +18,7 @@ Console.WriteLine($"Roslyn 4.3: {Helper.GetNumber()}");
 Console.WriteLine();
 Console.WriteLine("Interceptors:");
 Console.WriteLine($"- {Intercepted.Static("Hello, World!")}");
-Console.WriteLine($"- {new Intercepted().Instance(".NET Notts")}");
+Console.WriteLine($"- {new Intercepted().Instance("Coding Club Vienna")}");
 
 public static partial class Helper
 {

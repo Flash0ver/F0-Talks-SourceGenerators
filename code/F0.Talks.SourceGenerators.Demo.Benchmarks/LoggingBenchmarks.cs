@@ -13,7 +13,7 @@ namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 [MemoryDiagnoser(false)]
 public class LoggingBenchmarks
 {
-    private readonly string name = ".NET Notts";
+    private readonly string name = "Coding Club Vienna";
     private readonly int number = 2024;
 
     [ParamsSource(nameof(Loggers))]
