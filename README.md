@@ -9,6 +9,11 @@ My talk on Roslyn-based Source Generators.
 - More Roslyn Source Generators
 - An Ode to Roslyn Source Generators
 
+### 2024-05-08: ABP Dotnet Conference 2024
+- Online Event
+- [Event site](https://abp.io/conference/2024)
+- [Speaker page](https://abp.io/conference/2024/speakers/stefan-polz)
+
 ### 2024-05-07: Coding Club Vienna (May 2024)
 - In Person Meetup
 - [Coding Club Vienna](https://www.meetup.com/coding-club-vienna/)

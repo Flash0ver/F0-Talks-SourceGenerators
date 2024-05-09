@@ -32,7 +32,7 @@ public partial class RegexTests
     [Theory]
     [InlineData("0x_F0")]
     [InlineData("Backdraft")]
-    [InlineData("Coding Club Vienna")]
+    [InlineData("ABP Dotnet Conference 2024")]
     public void IsMatch_Mismatch_ReturnFalse(string text)
     {
         _regex.IsMatch(text).Should().BeFalse();
