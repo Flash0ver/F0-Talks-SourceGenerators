@@ -40,12 +40,12 @@
 [metadatareferencesprovider]: https://learn.microsoft.com/dotnet/api/microsoft.codeanalysis.incrementalgeneratorinitializationcontext.metadatareferencesprovider
 [forattributewithmetadataname]: https://learn.microsoft.com/dotnet/api/microsoft.codeanalysis.syntaxvalueprovider.forattributewithmetadataname
 
-[roslyn-3.8]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Workspaces/3.8.0
-[roslyn-3.9]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Workspaces/3.9.0
-[roslyn-4.0]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Workspaces/4.0.1
-[roslyn-4.1]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Workspaces/4.1.0
-[roslyn-4.2]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Workspaces/4.2.0
-[roslyn-4.3]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp.Workspaces/4.3.1
+[roslyn-3.8]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/3.8.0
+[roslyn-3.9]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/3.9.0
+[roslyn-4.0]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.0.1
+[roslyn-4.1]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.1.0
+[roslyn-4.2]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.2.0
+[roslyn-4.3]: https://www.nuget.org/packages/Microsoft.CodeAnalysis.CSharp/4.3.1
 
 [csharp-10.0]: https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-10
 [csharp-9.0]: https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-9
