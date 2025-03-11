@@ -11,9 +11,9 @@ namespace F0.Talks.SourceGenerators.Demo.Tests;
 [SuppressMessage("GeneratedRegex", "SYSLIB1045:Convert to 'GeneratedRegexAttribute'.", Justification = "Demo")]
 public partial class RegexTests
 {
-    private static readonly Regex _regex = new("Flash(Over|0ver|OWare)", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+    private static readonly Regex _regex = new("Flash(Over|0ver|OWare)", RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.Compiled);
 
-    [GeneratedRegex("Flash(Over|0ver|OWare)", RegexOptions.IgnoreCase, "en-US")]
+    [GeneratedRegex("Flash(Over|0ver|OWare)", RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture, "en-US")]
     private static partial Regex GeneratedRegex();
 
     [Theory]
@@ -32,7 +32,7 @@ public partial class RegexTests
     [Theory]
     [InlineData("0x_F0")]
     [InlineData("Backdraft")]
-    [InlineData("ABP Dotnet Conference 2024")]
+    [InlineData("Techorama 2024")]
     public void IsMatch_Mismatch_ReturnFalse(string text)
     {
         _regex.IsMatch(text).Should().BeFalse();

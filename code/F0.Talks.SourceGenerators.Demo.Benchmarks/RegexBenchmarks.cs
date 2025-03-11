@@ -1,6 +1,6 @@
-﻿using BenchmarkDotNet.Attributes;
-using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
+using BenchmarkDotNet.Attributes;
 
 namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 
@@ -15,7 +15,7 @@ public partial class RegexBenchmarks
     // lang=regex
     private const string Pattern = @".+\.(cs|vb)";
 
-    private static readonly Regex s_regex = new(Pattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex s_regex = new(Pattern, RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.Compiled);
 
     private string _text = null!;
 
@@ -28,14 +28,14 @@ public partial class RegexBenchmarks
     [Benchmark]
     public bool Interpreted_New()
     {
-        Regex regex = new(Pattern, RegexOptions.IgnoreCase);
+        Regex regex = new(Pattern, RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture);
         return regex.IsMatch(_text);
     }
 
     [Benchmark]
     public bool Compiled_New()
     {
-        Regex regex = new(Pattern, RegexOptions.IgnoreCase | RegexOptions.Compiled);
+        Regex regex = new(Pattern, RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.Compiled);
         return regex.IsMatch(_text);
     }
 
@@ -52,6 +52,6 @@ public partial class RegexBenchmarks
         return regex.IsMatch(_text);
     }
 
-    [GeneratedRegex(Pattern, RegexOptions.IgnoreCase)]
+    [GeneratedRegex(Pattern, RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture)]
     private static partial Regex GetGenerated();
 }

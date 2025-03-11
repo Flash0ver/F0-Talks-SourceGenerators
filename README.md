@@ -6,8 +6,13 @@ My talk on Roslyn-based Source Generators.
 - Let's Code an incremental source generator with Roslyn
 - Let's Build an incremental source generator with Roslyn
 - Experimental C# Interceptors: AOT & Performance for free
+- Of (incremental) Generators and (experimental) Interceptors
 - More Roslyn Source Generators
 - An Ode to Roslyn Source Generators
+
+### 2024-10-08: Techorama 2024 Netherlands - The Fun Fair Edition
+- Venue: _Kinepolis Jaarbeurs, Utrecht, The Netherlands_
+- [Techorama Netherlands](https://techorama.nl/)
 
 ### 2024-05-08: ABP Dotnet Conference 2024
 - Online Event

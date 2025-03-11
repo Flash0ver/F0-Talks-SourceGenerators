@@ -13,7 +13,7 @@ namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 [MemoryDiagnoser(false)]
 public class LoggingBenchmarks
 {
-    private readonly string name = "ABP Dotnet Conference";
+    private readonly string name = "Techorama";
     private readonly int number = 2024;
 
     [ParamsSource(nameof(Loggers))]
@@ -21,11 +21,11 @@ public class LoggingBenchmarks
 
     public static IEnumerable<ILogger> Loggers()
     {
-        return new[]
-        {
+        return
+        [
             new MyLogger(LogLevel.Information),
             new MyLogger(LogLevel.Warning),
-        };
+        ];
     }
 
     [Benchmark(Baseline = true)]

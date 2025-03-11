@@ -9,7 +9,7 @@
 * .NET since 2013
 * Roslyn since 2020
 * Source Generators since 2021
-* Senior Software Developer @ [Trayport](https://www.trayport.com)
+* Lead Software Engineer @ [Tricentis](https://www.tricentis.com)
 
 #### Community
 * JetBrains Community Contributor (.NET)

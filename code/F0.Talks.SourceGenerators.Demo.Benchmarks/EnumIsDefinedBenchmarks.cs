@@ -1,5 +1,4 @@
 using BenchmarkDotNet.Attributes;
-using FlashOWare.Generators;
 
 namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 
@@ -18,17 +17,28 @@ public class EnumIsDefinedBenchmarks
     [Benchmark]
     public bool Enum_IsDefined_Bcl()
     {
-        return Enum.IsDefined(value);
+        return SystemEnum.IsDefined(value);
     }
 
     [Benchmark]
     public bool Enum_IsDefined_Generated()
     {
-        return EnumInfo.IsDefined(value);
+        return InterceptedEnum.IsDefined(value);
     }
-}
 
-[GeneratedEnumIsDefined<StringComparison>]
-internal partial class EnumInfo
-{
+    private static class SystemEnum
+    {
+        internal static bool IsDefined<TEnum>(TEnum value) where TEnum : struct, Enum
+        {
+            return Enum.IsDefined(value);
+        }
+    }
+
+    private static class InterceptedEnum
+    {
+        internal static bool IsDefined(StringComparison value)
+        {
+            return Enum.IsDefined(value);
+        }
+    }
 }

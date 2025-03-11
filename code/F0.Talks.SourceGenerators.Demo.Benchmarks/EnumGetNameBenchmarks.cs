@@ -1,5 +1,4 @@
 using BenchmarkDotNet.Attributes;
-using FlashOWare.Generators;
 
 namespace F0.Talks.SourceGenerators.Demo.Benchmarks;
 
@@ -18,17 +17,28 @@ public class EnumGetNameBenchmarks
     [Benchmark]
     public string? Enum_GetName_Bcl()
     {
-        return Enum.GetName(value);
+        return SystemEnum.GetName(value);
     }
 
     [Benchmark]
     public string? Enum_GetName_Generated()
     {
-        return EnumInfo.GetName(value);
+        return InterceptedEnum.GetName(value);
     }
-}
 
-[GeneratedEnumGetName<StringComparison>]
-internal partial class EnumInfo
-{
+    private static class SystemEnum
+    {
+        internal static string? GetName<TEnum>(TEnum value) where TEnum : struct, Enum
+        {
+            return Enum.GetName(value);
+        }
+    }
+
+    private static class InterceptedEnum
+    {
+        internal static string? GetName(StringComparison value)
+        {
+            return Enum.GetName(value);
+        }
+    }
 }

@@ -18,7 +18,7 @@ Console.WriteLine($"Roslyn 4.3: {Helper.GetNumber()}");
 Console.WriteLine();
 Console.WriteLine("Interceptors:");
 Console.WriteLine($"- {Intercepted.Static("Hello, World!")}");
-Console.WriteLine($"- {new Intercepted().Instance("ABP Dotnet Conference 2024")}");
+Console.WriteLine($"- {new Intercepted().Instance("Techorama 2024")}");
 
 public static partial class Helper
 {

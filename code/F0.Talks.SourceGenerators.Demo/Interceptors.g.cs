@@ -6,13 +6,15 @@ namespace F0.Talks.SourceGenerators.Demo.Generated
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("F0.Talks.SourceGenerators.Demo", "1.0.0.0")]
     file static class Interceptors
     {
-        // [System.Runtime.CompilerServices.InterceptsLocation(@"Location\Program.cs", 20, 36)]
+        private const string FilePath = @"Location\Program.cs";
+
+        // [System.Runtime.CompilerServices.InterceptsLocation(FilePath, 20, 36)]
         internal static string Interceptor0(string text)
         {
             return $"Intercepted (static): {text}";
         }
 
-        // [System.Runtime.CompilerServices.InterceptsLocation(@"Location\Program.cs", 21, 42)]
+        // [System.Runtime.CompilerServices.InterceptsLocation(FilePath, 21, 42)]
         internal static string Interceptor1(this F0.Talks.SourceGenerators.Demo.Interceptors.Intercepted instance, string text)
         {
             return $"Intercepted (instance): {text}";
