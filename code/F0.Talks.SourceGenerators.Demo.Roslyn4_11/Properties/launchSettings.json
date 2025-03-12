@@ -1,7 +1,7 @@
-{
+﻿{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
-    "F0.Talks.SourceGenerators.Demo.Roslyn4_3": {
+    "F0.Talks.SourceGenerators.Demo.Roslyn4_11": {
       "commandName": "DebugRoslynComponent",
       "targetProject": "..\\F0.Talks.SourceGenerators.Demo\\F0.Talks.SourceGenerators.Demo.csproj"
     }

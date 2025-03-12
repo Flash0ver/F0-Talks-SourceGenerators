@@ -66,7 +66,7 @@
 
 ## C# 13.0
 
-- GA Interceptors
+- stable Interceptors
   - `[InterceptsLocation]`
     ```CSharp
     namespace System.Runtime.CompilerServices

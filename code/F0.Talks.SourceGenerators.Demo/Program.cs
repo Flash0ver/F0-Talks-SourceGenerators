@@ -1,7 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using F0.GeneratedNamespace;
 using F0.Talks.SourceGenerators.Demo;
-using F0.Talks.SourceGenerators.Demo.Interceptors;
 
 JsonSerializerDemo.Roundtrip();
 Console.WriteLine();

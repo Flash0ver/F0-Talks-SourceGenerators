@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
     "F0.Talks.SourceGenerators.Demo.Roslyn4_2": {
       "commandName": "DebugRoslynComponent",

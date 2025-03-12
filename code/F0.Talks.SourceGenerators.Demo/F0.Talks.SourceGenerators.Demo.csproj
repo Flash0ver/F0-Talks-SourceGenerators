@@ -14,15 +14,17 @@
 
   <PropertyGroup>
     <InterceptorsPreviewNamespaces>$(InterceptorsPreviewNamespaces);F0.Talks.SourceGenerators.Demo.Generated</InterceptorsPreviewNamespaces>
+    <InterceptorsNamespaces>$(InterceptorsNamespaces);Generated</InterceptorsNamespaces>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Interceptors\F0.Talks.SourceGenerators.Demo.Interceptors.csproj" />
     <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn3_8\F0.Talks.SourceGenerators.Demo.Roslyn3_8.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
     <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn3_9\F0.Talks.SourceGenerators.Demo.Roslyn3_9.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
     <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn4_0\F0.Talks.SourceGenerators.Demo.Roslyn4_0.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
     <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn4_2\F0.Talks.SourceGenerators.Demo.Roslyn4_2.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
     <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn4_3\F0.Talks.SourceGenerators.Demo.Roslyn4_3.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
+    <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn4_10\F0.Talks.SourceGenerators.Demo.Roslyn4_10.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
+    <ProjectReference Include="..\F0.Talks.SourceGenerators.Demo.Roslyn4_11\F0.Talks.SourceGenerators.Demo.Roslyn4_11.csproj" PrivateAssets="all" ReferenceOutputAssembly="false" OutputItemType="Analyzer" SetTargetFramework="TargetFramework=netstandard2.0" />
   </ItemGroup>
 
   <ItemGroup>
