@@ -23,6 +23,7 @@
 #### Alter egos
 * X (Twitter): [@0x_F0](https://twitter.com/0x_F0)
 * Mastodon: [@0x_F0@dotnet.social](https://dotnet.social/@0x_F0)
+* Bluesky: [@flash0ver.bsky.social](https://bsky.app/profile/flash0ver.bsky.social)
 * GitHub: [Flash0ver](https://github.com/Flash0ver)
 * NuGet: [Flash0ver](https://www.nuget.org/profiles/Flash0ver)
 * Stack Overflow: [FlashOver](https://stackoverflow.com/users/10167996/flashover)
