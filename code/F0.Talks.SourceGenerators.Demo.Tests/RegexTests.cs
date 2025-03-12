@@ -1,7 +1,6 @@
 ﻿using FluentAssertions;
 using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
-using Xunit;
 
 namespace F0.Talks.SourceGenerators.Demo.Tests;
 
@@ -14,7 +13,7 @@ public partial class RegexTests
     private static readonly Regex _regex = new("Flash(Over|0ver|OWare)", RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture | RegexOptions.Compiled);
 
     [GeneratedRegex("Flash(Over|0ver|OWare)", RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture, "en-US")]
-    private static partial Regex GeneratedRegex();
+    private static partial Regex GeneratedRegex { get; }
 
     [Theory]
     [InlineData("FlashOver")]
@@ -26,7 +25,7 @@ public partial class RegexTests
     public void IsMatch_Match_ReturnTrue(string text)
     {
         _regex.IsMatch(text).Should().BeTrue();
-        GeneratedRegex().IsMatch(text).Should().BeTrue();
+        GeneratedRegex.IsMatch(text).Should().BeTrue();
     }
 
     [Theory]
@@ -36,6 +35,6 @@ public partial class RegexTests
     public void IsMatch_Mismatch_ReturnFalse(string text)
     {
         _regex.IsMatch(text).Should().BeFalse();
-        GeneratedRegex().IsMatch(text).Should().BeFalse();
+        GeneratedRegex.IsMatch(text).Should().BeFalse();
     }
 }

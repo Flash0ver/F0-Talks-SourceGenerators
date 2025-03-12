@@ -48,10 +48,9 @@ public partial class RegexBenchmarks
     [Benchmark]
     public bool Generated()
     {
-        Regex regex = GetGenerated();
-        return regex.IsMatch(_text);
+        return GeneratedRegex.IsMatch(_text);
     }
 
     [GeneratedRegex(Pattern, RegexOptions.IgnoreCase | RegexOptions.ExplicitCapture)]
-    private static partial Regex GetGenerated();
+    private static partial Regex GeneratedRegex { get; }
 }

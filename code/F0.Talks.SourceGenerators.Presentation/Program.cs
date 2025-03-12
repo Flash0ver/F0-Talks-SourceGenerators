@@ -14,14 +14,10 @@ return await Bootstrapper
         .WithOutputWriteFiles(".css"))
     .RunAsync();
 
-internal sealed class LinkModule : ParallelModule
+internal sealed partial class LinkModule : ParallelModule
 {
-    private readonly Regex regex;
-
-    public LinkModule()
-    {
-        regex = new Regex(@"(\[.+]\(\.\/[^/]+\.)(md)(\))", RegexOptions.Compiled);
-    }
+    [GeneratedRegex(@"(\[.+]\(\.\/[^/]+\.)(md)(\))", RegexOptions.None)]
+    private static partial Regex Regex { get; }
 
     protected override async Task<IEnumerable<IDocument>> ExecuteInputAsync(IDocument input, IExecutionContext context)
     {
@@ -34,7 +30,7 @@ internal sealed class LinkModule : ParallelModule
             {
                 while (await reader.ReadLineAsync() is { } line)
                 {
-                    line = regex.Replace(line, "$1html$3", 1);
+                    line = Regex.Replace(line, "$1html$3", 1);
 
                     await writer.WriteLineAsync(line);
                 }

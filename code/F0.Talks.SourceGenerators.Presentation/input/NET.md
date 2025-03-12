@@ -15,10 +15,17 @@
   - JSExportGenerator | [Source](https://source.dot.net/#q=Microsoft.Interop.JavaScript.JSExportGenerator)
 
 ## .NET 8.0
+
 - Microsoft.AspNetCore.Http.RequestDelegateGenerator | [Source](https://source.dot.net/#q=Microsoft.AspNetCore.Http.RequestDelegateGenerator.RequestDelegateGenerator)
 - Configuration-binding source generator | [Source](https://github.com/dotnet/runtime/blob/main/src/libraries/Microsoft.Extensions.Configuration.Binder/gen/ConfigurationBindingGenerator.cs)
   - `<EnableConfigurationBindingGenerator>true</EnableConfigurationBindingGenerator>`
 - Source-generated COM interop | [YouTube](https://www.youtube.com/watch?v=DZd1SGd7dSU)
+
+## .NET 9.0
+
+- System.Text.RegularExpressions.GeneratedRegexAttribute
+  - supports `partial properties` via `AttributeTargets.Property`
+    - previously only `partial methods` via `AttributeTargets.Method`
 
 ---
 #### [TOC](./Content.md)

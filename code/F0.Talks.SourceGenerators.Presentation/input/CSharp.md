@@ -64,9 +64,27 @@
   - requires matching signatures
   - Static Methods or Extension Methods
 
+## C# 13.0
+
+- GA Interceptors
+  - `[InterceptsLocation]`
+    ```CSharp
+    namespace System.Runtime.CompilerServices
+    {
+        [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
+        public sealed class InterceptsLocationAttribute(int version, string data) : Attribute
+        {
+        }
+    }
+    ```
+- partial properties
+  - must have a matching implementation part
+- partial indexers
+  - must have a matching implementation part
+
 ---
 #### References
-- [partial method](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/partial-method)
+- [partial member](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/partial-member)
 - [ModuleInitializerAttribute](https://learn.microsoft.com/dotnet/api/system.runtime.compilerservices.moduleinitializerattribute)
 - [file keyword](https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/file)
 - [File-local types](https://learn.microsoft.com/dotnet/csharp/language-reference/proposals/csharp-11.0/file-local-types)

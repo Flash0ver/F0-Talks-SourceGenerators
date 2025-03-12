@@ -9,7 +9,7 @@ namespace F0.Talks.SourceGenerators.Demo.WpfApp;
 internal sealed partial class MainViewModel
 {
     [ObservableProperty]
-    private int number = 0x_F0;
+    public partial int Number { get; set; } = 0x_F0;
 
     [RelayCommand]
     void Increment()
